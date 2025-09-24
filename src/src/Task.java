@@ -3,10 +3,10 @@ public class Task {
     private String title;
     private boolean done;
 
-    public Task(int id, String title, boolean done) {
+    public Task(int id, String title) {
         this.id = id;
         this.title = title;
-        this.done = done;
+        this.done = false;
     }
 
     public int getId() {
