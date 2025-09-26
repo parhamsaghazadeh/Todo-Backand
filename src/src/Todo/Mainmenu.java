@@ -1,3 +1,5 @@
+package Todo;
+
 import java.util.Scanner;
 
 public class Mainmenu {

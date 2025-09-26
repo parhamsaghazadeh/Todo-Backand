@@ -1,5 +1,6 @@
+package Todo;
+
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class TodoApp {
     private int nextId;
@@ -14,7 +15,7 @@ public class TodoApp {
         Task newTask = new Task(nextId, title);
         task.add(newTask);
         nextId++;
-        System.out.println("Task added: " + newTask);
+        System.out.println("Todo.Task added: " + newTask);
     }
 
     public void listTasks() {
@@ -30,7 +31,7 @@ public class TodoApp {
         Task task = findTaskById(id);
         if (task != null) {
             task.setDone(true);
-            System.out.println("Task Marked: " + task);
+            System.out.println("Todo.Task Marked: " + task);
         } else System.out.println("No task found with id: " + id);
     }
 
@@ -38,7 +39,7 @@ public class TodoApp {
         Task task1 = findTaskById(id);
         if (task1 != null) {
             task.remove(task1);
-            System.out.println("Task Removed: " + task1);
+            System.out.println("Todo.Task Removed: " + task1);
         }else System.out.println("No task found with id: " + id);
     }
 
